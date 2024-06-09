@@ -12,27 +12,27 @@
             <div class="Box">
                 <input id="cityInput" placeholder="Enter the city name"> 
                 <button id="Search"> 
-                    <img src="C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/MAGNIFYINGGLASSICON.webp" alt="Glass" id="Image">
+                    <img src="https://raw.githubusercontent.com/AJParkerX/PRODIGY_WD_05/main/MAGNIFYINGGLASSICON.webp" alt="Glass" id="Image">
                 </button>
             </div>
             <div class="Info">
-                <img src="C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/Cloud.png" alt="Cloudy" id="Cloud" class="WEATHERICON">
+                <img src="https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/Cloud.png?raw=true" alt="Cloudy" id="Cloud" class="WEATHERICON">
                 <h1 class="Temp">---</h1>
                 <h2 class="City">---</h2>
                 <div class="Icons">
                     <div class="IconContainer">
                         <p id="HumName">Humidity</p>
-                        <img src="C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/HumidityIcon.png" alt="Humidity" id="Humid">
+                        <img src="https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/HumidityIcon.png?raw=true" alt="Humidity" id="Humid">
                         <p class="Hum">---</p>
                     </div>
                     <div class="IconContainer">
                         <p id="WindName">Wind Speed</p>
-                        <img src="C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/Windy.png" alt="Wind" id="Windy">
+                        <img src="https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/Windy.png?raw=true" alt="Wind" id="Windy">
                         <p class="Win">---</p>
                     </div>
                     <div class="IconContainer">
                         <p id="PresName">Pressure</p>
-                        <img src="C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/Pressure.png" alt="Pressure" id="Pressure">
+                        <img src="https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/Pressure.png?raw=true" alt="Pressure" id="Pressure">
                         <p class="Pres">---</p>
                     </div>
                 </div>
@@ -94,13 +94,13 @@
             document.querySelector(".Win").innerHTML = data.wind.speed + " km/h";
 
             if (data.weather[0].main == "Clouds") {
-                weatherIcon.src = "C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/Cloud.png";
+                weatherIcon.src = "https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/Cloud.png?raw=true";
             } else if (data.weather[0].main == "Clear") {
-                weatherIcon.src = "C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/sun.png";
+                weatherIcon.src = "https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/sun.png?raw=true";
             } else if (data.weather[0].main == "Rain") {
-                weatherIcon.src = "C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/storm.png";
+                weatherIcon.src = "https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/storm.png?raw=true";
             } else if (data.weather[0].main == "Snow") {
-                weatherIcon.src = "C:/Users/ajpar/OneDrive/Desktop/InternStuff/WeatherWiz/snow.png";
+                weatherIcon.src = "https://github.com/AJParkerX/PRODIGY_WD_05/blob/main/snow.png?raw=true";
             }
         }
 
