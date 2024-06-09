@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(40deg, rgb(2, 226, 255), rgb(0, 149, 255), rgb(52, 0, 222), rgb(1, 1, 124), rgb(2, 2, 85));
+    background-size: 300% 300%;
+    animation: Motion 2.0s ease-in-out 0s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes Motion {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 100% 55%;
+    }
+}
+
+#Image {
+    width: 23px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+#Image:hover{
+    background-color: rgba(34, 0, 255, 0.348);
+}
+
+input {
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    width: 520px;
+}
+
+.Box {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    height: 35px;
+}
+
+#Cloud {
+    width: 350px;
+    margin-left: 100px;
+}
+
+.Temp {
+    color: aliceblue;
+    padding-left: 20px;
+}
+
+.City {
+    color: aliceblue;
+    padding-left: 20px;
+}
+
+.Outer {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#Humid {
+    width: 25px;
+    position: absolute;
+    margin-left: 501px;
+    top: 438.5px;
+}
+
+.Hum {
+    color: aliceblue;
+    margin-left: 501px;
+    position: absolute;
+    top: 465px;
+    font-size: 12px;
+}
+
+#HumName {
+    color: aliceblue;
+    margin-left: 494px;
+    position: absolute;
+    top: 420px;
+    font-size: 10px;
+}
+
+#Windy {
+    width: 32px;
+    position: absolute;
+    margin-left: 438.5px;
+    top: 433px;
+}
+
+.Win {
+    color: aliceblue;
+    margin-left: 435px;
+    position: absolute;
+    top: 465px;
+    font-size: 12px;
+}
+
+#WindName {
+    color: aliceblue;
+    margin-left: 429px;
+    position: absolute;
+    top: 420px;
+    font-size: 10px;
+}
+
+#Pressure {
+    width: 32px;
+    position: absolute;
+    margin-left: 380px;
+    top: 433px;
+}
+
+.Pres {
+    color: aliceblue;
+    margin-left: 374px;
+    position: absolute;
+    top: 465px;
+    font-size: 12px;
+}
+
+#PresName {
+    color: aliceblue;
+    margin-left: 379px;
+    position: absolute;
+    top: 420px;
+    font-size: 10px;
+}
+
+.Info {
+    padding-bottom: 50px;
+}
+
+.List {
+    display: flex;
+}
+
+.Forecast {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ForecastDay {
+    text-align: center;
+    border: 2px solid rgba(97, 95, 95, 0.829);
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    margin: 5px;
+    background-color: rgba(154, 139, 255, 0.229);
+    color:aliceblue;
+}
+
+.ForecastIcon {
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+}
+
+.minValues, .maxValues {
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 20px;
+    width: 60px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
